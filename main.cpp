@@ -215,12 +215,13 @@ Vector<T>::~Vector()
 }
 int main()
 {
-//catch(const char *error){
+
    Vector<char> ob1(6,'a'),ob2,ob3;
   //ob1.pop_back();
   ob1.push_back('b');
   ob2=ob1;
-  ob2[5]='c';
+	//try
+  ob2[5]='c';//catch(const char *error){
    ob2.afisare();
   ob2.insert('q',3);
 
@@ -230,4 +231,4 @@ int main()
   // cout<<int(ob2);
 
 }
-//}
+
